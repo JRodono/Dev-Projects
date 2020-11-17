@@ -1,0 +1,108 @@
+/* @ imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Spectral:ital@1&display=swap');
+/* 
+font-family: 'Montserrat', sans-serif;     (default typeface)
+font-family: 'Spectral', serif;            (headers)
+*/
+
+:root {
+    --accent-color: #3dced0; /*pulled from logo eye*/
+    --second-accent-color: #e0e7e7; /*pulled from logo shadow*/
+    --default-bgc: #090909; /*from logo color pallette*/
+    --main-bgc: #3c096c;
+}
+    
+* {
+    background: #090909;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--second-accent-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    width: 80%;
+    padding: 0 10% 0 10%;
+}
+
+.top-and-bottom-third {}
+
+#logo-slogan {
+    width: 100%;
+    height: auto;
+}
+
+#main-top {
+    grid-template-rows: repeat(3, 1fr);
+    background-color: var(--main-bgc); 
+    border-radius: 1em 1em 0 0;
+    height: 3em;
+    margin: 7px 0 7px 0;
+}
+
+#main-bottom {
+    grid-template-rows: repeat(3, 1fr);
+    background-color: var(--main-bgc); 
+    border-radius: 0 0 1em 1em;
+    height: 3em;
+    margin-bottom: 7px;
+}
+
+#slogan-bar {
+    position: relative;
+    top: 5%;
+    height: auto;
+    margin-bottom: 7px;
+    font-family: 'Spectral', serif;
+    font-weight: bolder;
+    background-color: var(--main-bgc);
+    /* border-radius: 20px; */
+    z-index: 1;
+}
+
+#slogan-bar h1 {
+    background-color: transparent;
+    margin: 0;
+    padding: 0 0 0 285px;
+    font-size: 2.5em;
+}
+
+#bottom-h1 {
+    color: var(--main-bgc);
+}
+
+#logo-circle {
+    position: absolute;
+    top: 2.5%;
+    height: 225px;
+    width: 225px;
+    /* border: 1px solid #090909; */
+    /* border-radius: 50%; */
+    /* background-color: #3c096c; */
+    background: transparent;
+    margin-left: 50px;
+    margin-top: -35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#logo-circle img {
+    height: 200px;
+    width: 200px;
+    background: transparent;
+}
+
+#video-container {}
+
+#video-container div img {
+    height: 550px;
+    width: 100%;
+    border: 1px solid white;
+    object-fit: cover; 
+}
